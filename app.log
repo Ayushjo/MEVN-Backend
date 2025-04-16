@@ -2355,3 +2355,12 @@
 {"level":"\u001b[32minfo\u001b[39m","message":"{\"method\":\"GET\",\"url\":\"/users/getUserPost/undefined\",\"status\":\"500\",\"responseTime\":\"1.189\"}","timestamp":"2025-04-16T15:56:06.150Z"}
 {"level":"\u001b[32minfo\u001b[39m","message":"{\"method\":\"GET\",\"url\":\"/users/getUserPost/67ffcb772379d23d83780d14\",\"status\":\"200\",\"responseTime\":\"111.815\"}","timestamp":"2025-04-16T15:56:15.009Z"}
 {"level":"\u001b[32minfo\u001b[39m","message":"{\"method\":\"GET\",\"url\":\"/users/getPost\",\"status\":\"304\",\"responseTime\":\"87.212\"}","timestamp":"2025-04-16T15:56:24.877Z"}
+{"level":"\u001b[33mwarn\u001b[39m","message":"HUHUHU","timestamp":"2025-04-16T16:09:17.223Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Port 3080 running","timestamp":"2025-04-16T16:09:17.225Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"{\"method\":\"GET\",\"url\":\"/users/getPost\",\"status\":\"304\",\"responseTime\":\"103.748\"}","timestamp":"2025-04-16T16:09:23.276Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"{\"method\":\"GET\",\"url\":\"/users/getPost\",\"status\":\"304\",\"responseTime\":\"144.198\"}","timestamp":"2025-04-16T18:39:49.056Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"{\"method\":\"GET\",\"url\":\"/users/getPost/67ffd0ee2379d23d83780d36\",\"status\":\"200\",\"responseTime\":\"35.522\"}","timestamp":"2025-04-16T18:39:54.789Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"{\"method\":\"GET\",\"url\":\"/users/getUserPost/67ffcb772379d23d83780d14\",\"status\":\"304\",\"responseTime\":\"83.142\"}","timestamp":"2025-04-16T18:40:00.928Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"{\"method\":\"GET\",\"url\":\"/users/getPost\",\"status\":\"304\",\"responseTime\":\"87.739\"}","timestamp":"2025-04-16T18:40:12.007Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"{\"method\":\"GET\",\"url\":\"/users/getUserPost/67ffcb772379d23d83780d14\",\"status\":\"304\",\"responseTime\":\"93.998\"}","timestamp":"2025-04-16T18:52:10.356Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"{\"method\":\"GET\",\"url\":\"/users/getPost\",\"status\":\"304\",\"responseTime\":\"79.799\"}","timestamp":"2025-04-16T18:52:12.345Z"}
