@@ -2385,3 +2385,5 @@
 {"level":"\u001b[33mwarn\u001b[39m","message":"HUHUHU","timestamp":"2025-04-17T07:18:09.736Z"}
 {"level":"\u001b[32minfo\u001b[39m","message":"Port 3080 running","timestamp":"2025-04-17T07:18:09.739Z"}
 {"level":"\u001b[32minfo\u001b[39m","message":"{\"method\":\"GET\",\"url\":\"/users/getPost\",\"status\":\"200\",\"responseTime\":\"122.098\"}","timestamp":"2025-04-17T07:20:11.042Z"}
+{"level":"\u001b[33mwarn\u001b[39m","message":"HUHUHU","timestamp":"2025-04-17T09:53:53.358Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Port 3080 running","timestamp":"2025-04-17T09:53:53.360Z"}
