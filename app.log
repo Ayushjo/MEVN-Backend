@@ -2387,3 +2387,14 @@
 {"level":"\u001b[32minfo\u001b[39m","message":"{\"method\":\"GET\",\"url\":\"/users/getPost\",\"status\":\"200\",\"responseTime\":\"122.098\"}","timestamp":"2025-04-17T07:20:11.042Z"}
 {"level":"\u001b[33mwarn\u001b[39m","message":"HUHUHU","timestamp":"2025-04-17T09:53:53.358Z"}
 {"level":"\u001b[32minfo\u001b[39m","message":"Port 3080 running","timestamp":"2025-04-17T09:53:53.360Z"}
+{"level":"\u001b[33mwarn\u001b[39m","message":"HUHUHU","timestamp":"2025-04-18T06:21:33.141Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Port 3080 running","timestamp":"2025-04-18T06:21:33.148Z"}
+{"level":"\u001b[33mwarn\u001b[39m","message":"HUHUHU","timestamp":"2025-04-18T06:26:31.091Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Port 3080 running","timestamp":"2025-04-18T06:26:31.095Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"{\"method\":\"POST\",\"url\":\"/users/register\",\"status\":\"200\",\"responseTime\":\"501.253\"}","timestamp":"2025-04-18T06:26:52.034Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"{\"method\":\"POST\",\"url\":\"/users/login\",\"status\":\"200\",\"responseTime\":\"292.468\"}","timestamp":"2025-04-18T06:27:06.603Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"{\"method\":\"POST\",\"url\":\"/userspost/67f91c50006d79eaa4be4f31\",\"status\":\"404\",\"responseTime\":\"3.375\"}","timestamp":"2025-04-18T06:28:42.397Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"{\"method\":\"POST\",\"url\":\"/users/post/67f91c50006d79eaa4be4f31\",\"status\":\"200\",\"responseTime\":\"2332.642\"}","timestamp":"2025-04-18T06:28:58.781Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"{\"method\":\"GET\",\"url\":\"/users/getPost\",\"status\":\"200\",\"responseTime\":\"99.284\"}","timestamp":"2025-04-18T06:29:12.537Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"{\"method\":\"GET\",\"url\":\"/users/getPost/67fc9c18691b70663ce4c501\",\"status\":\"400\",\"responseTime\":\"45.874\"}","timestamp":"2025-04-18T06:29:30.342Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"{\"method\":\"POST\",\"url\":\"/users/updatePost/6801f12ac6bf132647f4cae8\",\"status\":\"200\",\"responseTime\":\"66.662\"}","timestamp":"2025-04-18T06:36:39.109Z"}

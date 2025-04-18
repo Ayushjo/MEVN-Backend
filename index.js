@@ -12,7 +12,6 @@ const app = express();
 
 const allowedOrigins = [
   "http://localhost:5173",
-  "https://mevn-frontend-xi.vercel.app",
 ];
 
 app.use(
