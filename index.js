@@ -10,9 +10,7 @@ dotenv.config({
 });
 const app = express();
 
-const allowedOrigins = [
-  "http://localhost:5173",
-];
+const allowedOrigins = ["https://happy-exploration-production.up.railway.app/"];
 
 app.use(
   cors({
