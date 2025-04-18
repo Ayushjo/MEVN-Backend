@@ -10,14 +10,8 @@ dotenv.config({
 });
 const app = express();
 
-const allowedOrigins = ["https://happy-exploration-production.up.railway.app"];
 
-app.use(
-  cors({
-    origin: allowedOrigins,
-    credentials: true,
-  })
-);
+app.use(cors());
 app.use(
   express.json({
     limit: "16kb",
