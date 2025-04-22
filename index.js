@@ -13,8 +13,8 @@ const app = express();
 
 app.use(
   cors({
-    origin: "http://localhost:5173",
-    credentials: true, // if you're using cookies/auth headers
+    origin: ["https://mevn-frontend-lltp.vercel.app", "http://localhost:5173"],
+    credentials: true,
   })
 );
 app.use(
