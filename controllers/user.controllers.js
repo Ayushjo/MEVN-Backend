@@ -75,6 +75,7 @@ const userRegister = async (req, res) => {
       field: err.path[0],
       message: err.message,
     }));
+    console.log(errors);
     res.status(400).json({ errors });
   } else {
     const { username, email, password } = req.body;
@@ -87,7 +88,7 @@ const userRegister = async (req, res) => {
         username,
         password,
       });
-      const token =await generateAccessToken(user._id)
+      const token = await generateAccessToken(user._id);
       const existedUser = await User.findById(user._id);
       if (!existedUser) {
         res.status(404).send("User not created");
@@ -95,7 +96,7 @@ const userRegister = async (req, res) => {
         res.status(200).json({
           data: existedUser,
           message: "User created successfully",
-          token
+          token,
         });
       }
     }
@@ -109,7 +110,10 @@ const loginUser = async (req, res) => {
       field: err.path[0],
       message: err.message,
     }));
+    console.log(errors);
+    
     res.status(400).json({ errors });
+
   } else {
     const { username, password } = req.body;
     const user = await User.findOne({ username });

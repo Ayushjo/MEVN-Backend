@@ -21,6 +21,7 @@ const createPost = async (req, res) => {
       field: err.path[0],
       message: err.message,
     }));
+    console.log(errors);
     res.status(400).json({ errors });
   } else {
     const { title, content } = req.body;
