@@ -25,7 +25,7 @@ router.route("/getPost").get(getAllPost)
 router.route("/getPost/:id").get(particularPost)
 router.route("/deletePost/:id").get(deletePost)
 router.route("/getUserPost/:userid").get(getUserPost);
-router.route("/updatePost/:postid").post(
+router.route("/updatePost/:postid").put(
   upload.fields([
     {
       name: "image",
