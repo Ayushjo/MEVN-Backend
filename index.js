@@ -13,7 +13,7 @@ const app = express();
 
 app.use(
   cors({
-    origin: ["https://mevn-frontend-lltp.vercel.app", "http://localhost:5173"],
+    origin: ["https://mevn-frontend-xi.vercel.app", "http://localhost:5173"],
     credentials: true,
   })
 );
