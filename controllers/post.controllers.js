@@ -109,32 +109,64 @@ const getUserPost = async (req, res) => {
 };
 
 const updatePost = async (req, res) => {
-  const { title, content } = req.body;
-  const imageFilePath = req.files?.image?.[0]?.path;
-  const postid = req.params.postid;
-  const updateData = {};
-  if (title) updateData.title = title;
-  if (content) updateData.content = content;
-  if (imageFilePath) {
-    const uploadedImage = await uploadOnCloudinary(imageFilePath);
-    updateData.image = uploadedImage.url;
-  }
-  if (Object.keys(updateData).length === 0) {
-    return res.status(400).send("No data provided for update");
-  }
-  const post = await Post.findOneAndUpdate(
-    { _id: postid, isDeleted: false },
-    { $set: updateData },
-    { new: true }
-  );
+  try {
+    const { title, content } = req.body;
+    const postid = req.params.postid;
+    const updateData = {};
 
-  if (post) {
-    res.status(200).send(post);
-  } else {
-    res.status(400).send("Could not update");
+    // Handle text fields
+    if (title) updateData.title = title;
+    if (content) updateData.content = content;
+
+    // Handle image if present
+    if (req.files && req.files.image && req.files.image[0]) {
+      const imageFilePath = req.files.image[0].path;
+      console.log("Image file path:", imageFilePath);
+
+      try {
+        const uploadedImage = await uploadOnCloudinary(imageFilePath);
+        if (uploadedImage) {
+          updateData.image = uploadedImage.url;
+        } else {
+          return res
+            .status(400)
+            .json({ message: "Failed to upload image to Cloudinary" });
+        }
+      } catch (uploadError) {
+        console.error("Cloudinary upload error:", uploadError);
+        return res
+          .status(500)
+          .json({ message: "Image upload failed", error: uploadError.message });
+      }
+    }
+
+    // Check if there's data to update
+    if (Object.keys(updateData).length === 0) {
+      return res.status(400).json({ message: "No data provided for update" });
+    }
+
+    // Update the post
+    const post = await Post.findOneAndUpdate(
+      { _id: postid, isDeleted: false },
+      { $set: updateData },
+      { new: true }
+    );
+
+    if (post) {
+      return res.status(200).json(post);
+    } else {
+      return res
+        .status(404)
+        .json({ message: "Post not found or could not be updated" });
+    }
+  } catch (error) {
+    console.error("Update post error:", error);
+    return res.status(500).json({
+      message: "Server error during post update",
+      error: error.message,
+    });
   }
 };
-
 // const updatePost = async(req,res)=>{
 
 //     const postId = req.params.id
